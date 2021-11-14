@@ -3,7 +3,7 @@
 
 Vous travaillez pour La chouette agence, une grande agence de web design basée à Lyon. L’activité de l’entreprise a bien démarré mais aujourd’hui, elle est en perte de vitesse. Eh oui, la concurrence est rude. La fondatrice de l’entreprise, Sophie, cherche une solution pour faire repartir l’activité. En tapant “Entreprise web design Lyon” sur Internet, elle s’aperçoit que le site de l’agence apparaît seulement en deuxième page des moteurs de recherche. Par chance, un de vos collègues, Martin, lui a dit que vous étiez un spécialiste en référencement.
 
-![Logo_de_l_agence](https://github.com/mhihmi/HilmiMehdi_4_14112021/blob/124db68094e030cbb3f7be5c653afba466352e81/img/readme/logo.png)
+![Logo_de_l_agence](https://github.com/mhihmi/HilmiMehdi_4_14112021/blob/main/img/readme/Logo.png?raw=true)
 
 ## Mission :
 * Analyse de l’état actuel de SEO du site fourni. J’aimerais que tu indiques les parties du site qui ne sont pas optimisées pour le SEO et/ou qui ne sont pas à jour en termes d’accessibilité, et que tu justifies tes choix. Pense à ajouter la bonne pratique à mettre en place pour chaque partie du site qui n’est pas optimisée, en citant tes sources. Tu trouveras ci-joint un modèle pour réaliser ton analyse. Une fois ce modèle complété, j’aimerais que tu sélectionnes 10 recommandations pour améliorer le site. Je te laisse cocher ces 10 recommandations choisies dans la colonne “Action recommandée”.
