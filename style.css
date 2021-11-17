@@ -337,6 +337,28 @@ a:hover {
   background: transparent;
 }
 
+.nav > li a::before {
+  content: "";
+  width: 95%;
+  height: 60%;
+  border-radius: 20px;
+  display: block;
+  position: absolute;
+  top: 9px;
+  left: 3px;
+  background: #f3976c;
+  transform: scaleX(0);
+  transform-origin: 100%;
+  transition: transform 0.4s ease;
+  z-index: -10;
+}
+
+.nav > li a:hover::before,
+.nav > li a:focus::before {
+  transform-origin: 0;
+  transform: scaleX(1);
+}
+
 .navbar-toggle {
   margin: 10px 10px 0 0;
   border: 0px;
