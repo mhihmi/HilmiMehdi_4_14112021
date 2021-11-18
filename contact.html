@@ -12,10 +12,10 @@
 	<meta name="description"
 		content="La chouette Agence, entreprise spécialisée en web design basée à Lyon, améliore votre visibilité et votre attractivité sur le web.">
 	<!-- Favicon -->
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
-	<link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="./android-chrome-192x192.png">
+	<link rel="icon" type="image/png" sizes="512x512" href="./android-chrome-512x512.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
 
 	<!-- Analytics -->
 	<!-- Insérer ici votre script gtag pour pouvoir analyser votre audience avec Analytics-->
@@ -34,26 +34,6 @@
 	<script src="./js/jqBootstrapValidation.min.js" defer></script>
 	<script src="./js/formHandler.min.js" defer></script>
 	<script src="./js/gmaps.min.js" defer></script>
-	<script>
-		// Initialize and add the map
-		function initMap() {
-			// The location of Uluru
-			const uluru = {
-				lat: -25.344,
-				lng: 131.036
-			};
-			// The map, centered at Uluru
-			const map = new google.maps.Map(document.getElementById("map"), {
-				zoom: 4,
-				center: uluru,
-			});
-			// The marker, positioned at Uluru
-			const marker = new google.maps.Marker({
-				position: uluru,
-				map: map,
-			});
-		}
-	</script>
 	<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-0DdLso-HIY8hRT7JAlwAZ0Yit0-Xf6M">
 	</script>
 </head>
@@ -202,7 +182,26 @@
 		<!-- Footer - bloc-8 END -->
 	</div>
 	<!-- Principal conteneur END -->
-
+	<script>
+		// Initialize and add the map
+		function initMap() {
+			// The location of Uluru
+			const uluru = {
+				lat: -25.344,
+				lng: 131.036
+			};
+			// The map, centered at Uluru
+			const map = new google.maps.Map(document.getElementById("map"), {
+				zoom: 4,
+				center: uluru,
+			});
+			// The marker, positioned at Uluru
+			const marker = new google.maps.Marker({
+				position: uluru,
+				map: map,
+			});
+		}
+	</script>
 
 </body>
 
