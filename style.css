@@ -45,7 +45,7 @@ a:hover {
 }
 
 .bloc-lg {
-  padding: 100px 50px;
+  padding: 60px 50px;
 }
 
 .bloc-md {
@@ -495,6 +495,13 @@ blockquote {
   margin-bottom: 5px;
 }
 
+.quote {
+  font-weight: bold;
+  font-style: italic;
+  color: #333333;
+  font-size: 2rem;
+}
+
 .btn-clean {
   border: 1px solid rgba(0, 0, 0, 0.08);
   border-bottom-color: rgba(0, 0, 0, 0.1);
@@ -539,6 +546,7 @@ blockquote {
 }
 
 .scrollToTop {
+  background: rgba(0, 0, 0, 0.5);
   width: 40px;
   height: 40px;
   position: fixed;
@@ -551,6 +559,7 @@ blockquote {
 
 .scrollToTop span {
   margin-top: 6px;
+  color: #fff !important;
 }
 
 .showScrollTop {
@@ -606,6 +615,7 @@ a[data-lightbox]:hover img {
 }
 
 .lightbox-caption {
+  text-align: center;
   padding: 20px;
   color: #fff;
   background: rgba(0, 0, 0, 0.5);
@@ -622,7 +632,7 @@ a[data-lightbox]:hover img {
   top: 20px;
   right: 20px;
   z-index: 20;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.8);
   border: none;
   line-height: 30px;
   padding: 0 9px 5px;
@@ -639,8 +649,7 @@ a[data-lightbox]:hover img {
 .next-lightbox,
 .prev-lightbox {
   font-size: 20px;
-  color: rgba(255, 255, 255, 0.9);
-  background: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.902);
   transition: all 0.2s ease-in-out;
   position: absolute;
   top: 45%;
@@ -733,6 +742,16 @@ p {
   margin: auto auto auto auto;
 }
 
+.social span {
+  color: rgba(15, 15, 15, 0.8) !important;
+}
+
+.social span:hover,
+.social span:focus {
+  color: rgba(255, 255, 255, 0.8) !important;
+  transition: all 0.2s ease-in-out;
+}
+
 h2 {
   font-size: 22px;
   line-height: 1.4em;
@@ -766,6 +785,7 @@ h4 {
 
 .white {
   color: #ffffff !important;
+  position: relative;
 }
 
 .portfolio-thumb {
@@ -782,9 +802,10 @@ h4 {
   box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.3);
 }
 
-.black-background {
-  background-color: rgba(165, 147, 99, 0.7);
+.white-background {
+  background-color: rgba(255, 255, 255, 0.7);
   padding: 40px 40px 40px 40px;
+  position: relative;
 }
 
 .bold-link {
@@ -808,14 +829,19 @@ h4 {
   color: #f3976c !important;
 }
 
-.btn-atomic-tangerine {
-  background: #f3976c;
-  color: #ffffff !important;
+.tc-black {
+  color: #000000 !important;
 }
 
-.btn-atomic-tangerine:hover {
-  background: #c27956 !important;
-  color: #ffffff !important;
+.btn-atomic-tangerine {
+  background: #f3976c;
+  color: #000000 !important;
+}
+
+.btn-atomic-tangerine:hover,
+.btn-atomic-tangerine:focus {
+  background: #fcc24f !important;
+  color: #000000 !important;
 }
 
 .ltc-white {
@@ -824,6 +850,20 @@ h4 {
 
 .ltc-white:hover {
   color: #cccccc !important;
+}
+
+.ltc-black {
+  color: #000000 !important;
+}
+
+.ltc-black:hover {
+  color: #000000 !important;
+  background: #f3976c;
+}
+
+.ltc-black:focus {
+  color: #000000 !important;
+  background: #f3976c;
 }
 
 .ltc-atomic-tangerine {
