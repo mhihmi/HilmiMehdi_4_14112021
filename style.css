@@ -490,6 +490,11 @@ button {
   border-radius: 40px;
 }
 
+blockquote {
+  border-left: none;
+  margin-bottom: 5px;
+}
+
 .btn-clean {
   border: 1px solid rgba(0, 0, 0, 0.08);
   border-bottom-color: rgba(0, 0, 0, 0.1);
@@ -701,7 +706,7 @@ a {
 }
 
 p {
-  font-size: 11px;
+  font-size: 14px;
 }
 
 .tight-width-whitespace {
@@ -764,12 +769,13 @@ h4 {
 }
 
 .portfolio-thumb {
-  margin-bottom: 24px;
+  margin: 24px auto;
+  max-height: 300px;
 }
 
 .portfolio-row {
-  margin-bottom: 44px;
-  margin-top: 50px;
+  margin-bottom: 25px;
+  margin-top: 30px;
 }
 
 .avatar {
