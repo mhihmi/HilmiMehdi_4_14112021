@@ -8,7 +8,7 @@
 	<meta name="robots" content="index,follow" />
 
 	<!-- Title / Description -->
-	<title>La Chouette Agence - Entreprise webdesign Lyon - Contact</title>
+	<title>La Chouette Agence - Page de Contact</title>
 	<meta name="description"
 		content="La chouette Agence, entreprise spécialisée en web design basée à Lyon, améliore votre visibilité et votre attractivité sur le web.">
 	<!-- Favicon -->
@@ -34,7 +34,28 @@
 	<script src="./js/jqBootstrapValidation.min.js" defer></script>
 	<script src="./js/formHandler.min.js" defer></script>
 	<script src="./js/gmaps.min.js" defer></script>
-
+	<script>
+		// Initialize and add the map
+		function initMap() {
+			// The location of Uluru
+			const uluru = {
+				lat: -25.344,
+				lng: 131.036
+			};
+			// The map, centered at Uluru
+			const map = new google.maps.Map(document.getElementById("map"), {
+				zoom: 4,
+				center: uluru,
+			});
+			// The marker, positioned at Uluru
+			const marker = new google.maps.Marker({
+				position: uluru,
+				map: map,
+			});
+		}
+	</script>
+	<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-0DdLso-HIY8hRT7JAlwAZ0Yit0-Xf6M">
+	</script>
 </head>
 
 <body>
@@ -67,7 +88,7 @@
 		<!-- bloc-0 END -->
 		<main>
 			<!-- bloc-6 -->
-			<section class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper"
+			<section class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine-top d-bloc bloc-bg-texture texture-paper"
 				id="bloc-6">
 				<div class="container bloc-lg">
 					<div class="row">
@@ -90,44 +111,46 @@
 				<div class="container bloc-lg">
 					<div class="row">
 						<div class="col-sm-6">
-							<form id="form_1" novalidate success-msg="Your message has been sent."
-								fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+							<form id="form_1" novalidate success-msg="Votre message a bien été envoyé."
+								fail-msg="Il semblerait que notre serveur ne réponde pas, désolé pour le dérangement!">
 								<div class="form-group">
-									<label>
-										Nom
+									<label for="name">
+										Indiquez votre Nom
 									</label>
-									<input id="name" class="form-control" required />
+									<input id="name" class="form-control" required aria-required="true" />
 								</div>
 								<div class="form-group">
-									<label>
-										Adresse email
+									<label for="email">
+										Quelle est votre adresse email ?
 									</label>
-									<input id="email" class="form-control" type="email" required />
+									<input id="email" class="form-control" type="email" required aria-required="true" />
 								</div>
 								<div class="form-group">
-									<label>
+									<label for="input_504">
 										Comment nous avez-vous connu ?
 									</label>
-									<input class="form-control" type="email" required id="input_504" />
+									<input class="form-control" type="email" required id="input_504"
+										aria-required="true" />
 								</div>
 								<div class="form-group">
-									<label>
+									<label for="message">
 										Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-									</label><textarea id="message" class="form-control" rows="4" cols="50"
-										required></textarea>
+									</label><textarea id="message" class="form-control" rows="4" cols="50" required
+										aria-required="true"></textarea>
 								</div>
 								<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine"
-									type="submit">
+									type="submit" aria-label="envoyer le formulaire de contact">
 									Envoyer
 								</button>
 							</form>
 						</div>
 						<div class="col-sm-6">
-							<p>
+							<div id="map"></div>
+							<address class="text-center">
 								contact@lachouetteagence.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du
 								lundi
 								au vendredi<br>
-							</p>
+							</address>
 						</div>
 					</div>
 				</div>
@@ -139,35 +162,35 @@
 			<div class="container bloc-sm">
 				<div class="row">
 					<div class="col-sm-12">
-						<p class="text-center white">
+						<p class="text-center ltc-black">
 							La chouette agence - Spécialisée en webdesign
 						</p>
 						<div class="row row-no-gutters social">
 							<div class="col-sm-3">
 								<div class="text-center">
 									<a class="social" href="https://twitter.com/lachouetteagence/"
-										title="Notre page twitter" aria-label="Lien vers notre page twitter"><span
+										title="Notre page twitter" aria-label="vers notre page twitter"><span
 											class="fa fa-twitter icon-md"></span></a>
 								</div>
 							</div>
 							<div class="col-sm-3">
 								<div class="text-center">
 									<a class="social" href="https://www.facebook.com/lachouetteagence/"
-										title="Notre page facebook" aria-label="Lien vers notre page facebook"><span
+										title="Notre page facebook" aria-label="vers notre page facebook"><span
 											class="fa fa-facebook icon-md"></span></a>
 								</div>
 							</div>
 							<div class="col-sm-3">
 								<div class="text-center">
 									<a class="social" href="https://dribbble.com/lachouetteagence/"
-										title="Notre page dribble" aria-label="Lien vers notre page dribble"><span
+										title="Notre page dribble" aria-label="vers notre page dribble"><span
 											class="fa fa-dribbble icon-md"></span></a>
 								</div>
 							</div>
 							<div class="col-sm-3">
 								<div class="text-center">
 									<a class="social" href="https://www.instagram.com/lachouetteagence/"
-										title="Notre page instagram" aria-label="Lien vers notre page instagram"><span
+										title="Notre page instagram" aria-label="vers notre page instagram"><span
 											class="fa fa-instagram icon-md"></span></a>
 								</div>
 							</div>
