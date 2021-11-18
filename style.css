@@ -18,6 +18,10 @@ a:hover {
   cursor: pointer;
 }
 
+a:focus {
+  outline: auto !important;
+}
+
 #page-loading-blocs-notifaction {
   position: fixed;
   top: 0;
