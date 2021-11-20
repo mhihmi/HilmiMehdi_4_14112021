@@ -33,6 +33,26 @@
 	<script src="./js/blocs.min.js" defer></script>
 	<script src="./js/jqBootstrapValidation.min.js" defer></script>
 	<script src="./js/formHandler.min.js" defer></script>
+	<script>
+		// Initialize and add the map
+		function initMap() {
+			// The location of Uluru
+			const lyon = {
+				lat: 45.75,
+				lng: 4.85
+			};
+			// The map, centered at Uluru
+			const map = new google.maps.Map(document.getElementById("map"), {
+				zoom: 12,
+				center: lyon,
+			});
+			// The marker, positioned at Uluru
+			const marker = new google.maps.Marker({
+				position: lyon,
+				map: map,
+			});
+		}
+	</script>
 </head>
 
 <body>
@@ -120,7 +140,12 @@
 								</button>
 							</form>
 						</div>
+
 						<div class="col-sm-6">
+							<div id="map"></div>
+						</div>
+
+						<div class="col-sm-12 mt-3">
 							<address class="text-center">
 								contact@lachouetteagence.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du
 								lundi
@@ -177,6 +202,10 @@
 		<!-- Footer - bloc-8 END -->
 	</div>
 	<!-- Principal conteneur END -->
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-0DdLso-HIY8hRT7JAlwAZ0Yit0-Xf6M&callback=initMap&libraries=&v=weekly"
+		defer>
+	</script>
 </body>
 
 </html>
